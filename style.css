@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0px 10px ;
+    padding: 0;
+    background-color: #fff;
+    list-style: none;
+    font-family: "Monserrat", sans-serif;
+}
+
+h3{
+    font-size: 30px;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+li, a{
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.navlink{
+    list-style: none;
+}
+
+.navlink li{
+    display: inline-block;
+    padding: 2px;
+}
+
+.search{
+    width: 500px;
+    padding: 10px;
+    border-radius: 30px; 
+    background: #f0f0f0;  
+}
+
+header .search input{
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    width: 300px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#img-1{
+    width: 50%;
+    height: auto;
+}
+
+#img-2 {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.left-arrow{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-top: 140px;
+    margin-left: -25px;
+    opacity: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 5px 15px black;
+}
+
+.left-arrow:hover{
+    transform: scale(1.1);
+}
+
+.right-arrow{
+    width: 80px;
+    height: 80px;
+    position:absolute;
+    z-index: 1;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-top: 140px;
+    margin-left: 92%;
+    opacity: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 5px 15px black;
+}
+
+.right-arrow:hover{
+    transform: scale(1.1);
+}
+
+.category{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category h2{
+    font-family: "Monserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.category h4{
+    font-family: "Monserrat", sans-serif;
+    font-size: 20px;
+    position: relative;
+    margin: 0px 60px;
+    color: grey;
+    cursor: pointer;
+    transition: transform 0.3 ease;
+}
+
+.category h4:hover{
+    transform: scale(1.1);
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 15px;
+    margin: 10px 50px;
+}
+
+
+.image-grid img{
+    width: 70%;
+    height: auto;
+    transition: transform 0.3 ease;
+}
+
+.image-grid img:hover{
+    transform: scale(1.1);
+}
+.deals{
+    /* border: 2px solid black; */
+    background-color: #f0f0f0;
+    height: 220px;
+    width: 94%;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+
+}
+.paradiv{
+    padding-top: 20px;
+    /* height: 100%; */
+    height: auto;
+    width: 250px ;
+    text-align: center;
+    background-color: #f0f0f0;
+
+}
+.paradiv>h1{
+    font-family: "Monserrat", sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 35px;
+    /* width: 100%; */
+    text-align: start;
+    background-color: #f0f0f0;
+}
+.paradiv>h2{
+    /* text-align: center; */
+    font-family: "Monserrat", sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    /* margin-left: 20px; */
+    text-align: start;
+    background-color: #f0f0f0;
+}
+.imagesdiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.abc{
+    height: 100%;
+    width: 125px;
+    background-color: #f0f0f0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.abc img{
+    margin-top: 40px;
+    height: 77px;
+    width: 95px;
+    border-radius: 50%;
+    transition: transform ease-out 0.3;
+    cursor: pointer;
+}
+.abc img:hover{
+    transform: scale(1.1);
+}
+
+.abc a{
+    font-weight: 700;
+    align-items: center;
+    background-color: #f0f0f0;
+    justify-content: center;
+}
+
+.last-arrow{
+    position: absolute;
+    z-index: 1;
+    margin-top: 80px;
+    margin-left: 1200px;
+    background-color: #f0f0f0;
+    transition: transform ease-out 0.3;
+    cursor: pointer;
+}
+
+.last-arrow:hover{
+    transform: scale(1.1);
+}
+
+.brand{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand h2{
+    font-family: "Monserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.brand h4{
+    font-family: "Monserrat", sans-serif;
+    font-size: 20px;
+    position: relative;
+    margin: 0px 50px;
+    color: grey;
+    cursor: pointer;
+    transition: transform 0.3 ease;
+}
+
+.brand h4:hover{
+    transform: scale(1.1);
+}
+
+.brands-img{
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    margin-bottom: 250px;
+}
+
+.brands-img img{
+    width: 50%;
+}
+
+.footer{
+    background-color: #f0f0f0;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto) );
+    gap: 3.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: top 60px;
+    padding: 45px;
+}
+
+.footer-content{
+    background-color: #f0f0f0;
+    margin-top: 60px;
+}
+
+.footer-content h4{
+    color: fff;
+    background-color: #f0f0f0;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content h3{
+    color: black;
+    background-color: #f0f0f0;
+    margin-left: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    align-items: flex-start;
+}
+
+
+.footer-content li{
+    margin-bottom: 16px;
+    background-color: #f0f0f0;
+}
+
+.footer-content li a{
+    display: block;
+    background-color: #f0f0f0;
+    font-size: 15px;
+    font-weight: lighter;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover{
+    transform: translateY(-1px) translateX(-1px);
+}
+
+.footer-content p{
+    font-size: 16px;
+    background-color: #f0f0f0;
+    line-height: 30px;
+    margin: 20px 0
+}
+
+.footer-content .icons{
+    background-color: #f0f0f0;
+}
+
+.footer-content .icons a{
+    background-color: #f0f0f0;
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 17px;
+    transition: all 0.40s ease;
+    border-radius: 50%;
+}
+
+.footer-content .icons a:hover{
+    transform: translateY(-1px) translateX(-1px);
+}
+
+.footer-content .col p{
+    background-color: #f0f0f0;
+}
+
+.form-2{
+    position: absolute;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+    width: 90%;
+    border-radius: 30px;
+    margin-left: 90px;
+    margin-top: -125px;
+}
+
+.form-2 .slogan{
+    background-color: black;
+    padding: 0;
+}
+
+.form-2 .slogan p{
+    color: #fff;
+    background-color: #000;
+    font-size:3.2em;
+    font-weight: 900;
+}
+
+.form-2 .letter{
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-2 .letter .email{
+    width: 500px;
+    padding: 10px;
+    border-radius: 30px; 
+    background: #f0f0f0;  
+    margin-bottom: 10px;
+}
+
+.form-2 .letter .email input{
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    width: 400px;
+}
+
+.form-2 .letter button{
+    width: 500px;
+    padding: 10px;
+    border-radius: 30px; 
+    background: #f0f0f0;  
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform ease-out 0.10s;
+}
+
+.form-2 .letter button:hover{
+    transform: scale(1.1);
+}
